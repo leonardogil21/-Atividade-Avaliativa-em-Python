@@ -1,98 +1,46 @@
-# -Atividade-Avaliativa-em-Python
-🚀📊 Atividade Avaliativa em Python
+# Atividade Avaliativa — Lógica de Programação com Python 🐍
 
-👨‍💻 Aluno: Leonardo Gil
+Este repositório contém a resolução de uma atividade prática focada em lógica de programação, utilizando estruturas de controle (condicionais), laços de repetição (loops) e manipulação de listas e dicionários em Python.
 
-Este projeto apresenta a resolução de exercícios práticos em Python, com foco no desenvolvimento da lógica de programação.
-Os problemas abordam situações do dia a dia, como classificação de dados, análise de consumo e cálculos com regras condicionais.
+## 📋 Descrição dos Problemas
 
-🌐 ▶️ Como executar no Google Colab
+O projeto consiste em quatro questões que simulam cenários reais de análise de dados e automação de processos:
 
-Siga o passo a passo abaixo para rodar o projeto:
+### 1. Classificação de Temperaturas
+* **Problema:** Analisar uma lista de temperaturas semanais e classificá-las em categorias (Frio, Agradável, Quente).
+* **Lógica:** Utiliza um laço `for` para percorrer a lista e uma estrutura `if-elif-else` para definir a categoria baseada em faixas de valores. Ao final, um dicionário é utilizado para contabilizar a frequência de cada categoria.
 
-🌍 Acesse: https://colab.research.google.com
-📂 Clique em "Upload"
-⬆️ Envie o arquivo .ipynb deste repositório
-▶️ Execute as células com Shift + Enter
-🧩📌 Questões Resolvidas
-❄️🌤️🔥 Questão 1 — Classificação de Temperaturas
-🔍 Problema
+### 2. Sistema de Avaliação de Alunos
+* **Problema:** Processar notas escolares para determinar o status acadêmico (Aprovado, Recuperação ou Reprovado) e calcular estatísticas de desempenho.
+* **Lógica:** Aplica condicionais para gerar a lista de status e utiliza o método `.count()` e funções de agregação para calcular a quantidade de aprovados e o percentual de reprovados da turma.
 
-Dada uma lista de temperaturas semanais:
+### 3. Monitoramento de Consumo de Energia
+* **Problema:** Analisar o consumo diário de energia (kWh), identificar picos de consumo e calcular métricas semanais.
+* **Lógica:** Realiza a filtragem de dados (list comprehension/append) para identificar dias de alto consumo. Calcula o total e a média através das funções `sum()` e `len()`, disparando um alerta visual caso o limite de dias críticos seja atingido.
 
-temperaturas = [18, 22, 30, 35, 28, 15, 40]
+### 4. Simulação de Carrinho de Compras
+* **Problema:** Aplicar descontos progressivos em uma lista de produtos e calcular a economia total do cliente.
+* **Lógica:** Implementa uma regra de negócio onde a porcentagem do desconto varia conforme o valor unitário do item. O script calcula o preço final de cada produto e acumula o valor economizado em uma variável global.
 
-Classificar cada temperatura como:
+---
 
-❄️ Frio → menor que 20
-🌤️ Agradável → entre 20 e 30
-🔥 Quente → acima de 30
-🧠 Lógica aplicada
-🔁 Percorrer a lista com for
-⚖️ Usar if, elif e else
-🧾 Armazenar os resultados em uma nova lista
-🎓📊 Questão 2 — Sistema de Avaliação de Alunos
-🔍 Problema
+## 🛠️ Tecnologias Utilizadas
 
-Lista de notas:
+* **Python 3**
+* **Google Colab** (Ambiente de desenvolvimento)
+* **Bibliotecas nativas:** Sem dependências externas.
 
-notas = [4.5, 6.0, 7.8, 9.0, 5.5, 8.2]
+---
 
-Classificação:
+## 🚀 Como Executar no Google Colab
 
-❌ Reprovado → nota < 5
-⚠️ Recuperação → entre 5 e 7
-✅ Aprovado → ≥ 7
-🧠 Lógica aplicada
-🔁 Loop com for
-📊 Condições para classificar cada nota
-🗂️ Armazenamento em lista
-⚡🏠 Questão 3 — Consumo de Energia
-🔍 Problema
+Para visualizar e testar o código original, siga os passos abaixo:
 
-Consumo diário em kWh:
+1.  Acesse o [Google Colab](https://colab.research.google.com/).
+2.  Clique em **Arquivo > Fazer upload de notebook**.
+3.  Selecione o arquivo `Leonardo_Gil_p1.ipynb` presente neste repositório.
+4.  Para rodar as células, clique no botão "Play" no canto esquerdo de cada bloco de código ou pressione `Ctrl + Enter`.
 
-consumo = [120, 95, 200, 180, 75, 220, 160]
+---
 
-Classificação:
-
-🟢 Baixo → < 100
-🟡 Moderado → 100 a 179
-🔴 Alto → ≥ 180
-🧠 Lógica aplicada
-🔍 Identificação de consumo alto
-🔁 Uso de loop + condição
-🚨 Criação de lista com dias críticos
-🛒💰 Questão 4 — Carrinho de Compras
-🔍 Problema
-
-Lista de preços:
-
-precos = [50, 120, 30, 200, 80, 15]
-
-Regras de desconto:
-
-🟢 < 50 → 5%
-🟡 50 a 150 → 10%
-🔴 > 150 → 15%
-🧠 Lógica aplicada
-🔁 Percorrer os preços
-📉 Aplicar desconto com if/elif
-🧮 Calcular preço final:
-preco_final = preco - (preco * desconto)
-💵 Calcular economia total
-🛠️⚙️ Tecnologias Utilizadas
-🐍 Python
-☁️ Google Colab
-📓 Jupyter Notebook
-🎯📈 Objetivo do Projeto
-
-Este projeto tem como objetivo desenvolver habilidades em:
-
-🧠 Lógica de programação
-🔁 Estruturas de repetição (for)
-⚖️ Estruturas condicionais (if/elif/else)
-📊 Manipulação de listas
-⭐💡 Considerações Finais
-
-Este repositório representa a prática de conceitos fundamentais em Python, servindo como base para projetos mais avançados no futuro 🚀
+**Desenvolvido por:** [Leonardo Gil](https://github.com/SEU_USUARIO_AQUI)
